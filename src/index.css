@@ -200,7 +200,7 @@ select:focus {
 
 .table {
 	width: 100%;
-	padding: 0 2%;
+	/* padding: 0 2%; */
 }
 
 .table-head {
@@ -211,6 +211,22 @@ select:focus {
 .table-head th {
 	padding: 0.5rem;
 	color: var(--naranja);
+}
+
+.table-body {
+	background: var(--azul-gris-claro);
+}
+
+.table-body td {
+	padding: 0 1rem;
+	color: var(--azul-muy-oscuro);
+}
+
+.title-lista {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
 }
 
 /* === Error === */

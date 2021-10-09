@@ -47,18 +47,6 @@
       "ultimaActualizacion": "Just now",
       "fecha": "Sat Oct 09 2021 16:19:03 GMT-0500 (hora estándar de Colombia)",
       "id": 16
-    },
-    {
-      "divisa": "USD",
-      "cripto": "ETH",
-      "precio": "$ 3,570.98",
-      "precioApertura": "$ 3,562.87",
-      "precioAltoDia": "$ 3,633.84",
-      "precioBajoDia": "$ 3,539.30",
-      "variacion": "-0.09",
-      "ultimaActualizacion": "Just now",
-      "fecha": "Sat Oct 09 2021 16:21:57 GMT-0500 (hora estándar de Colombia)",
-      "id": 17
     }
   ]
 }

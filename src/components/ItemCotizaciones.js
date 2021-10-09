@@ -47,10 +47,7 @@ const ItemCotizaciones = ({ item, cotizaciones, setCotizaciones }) => {
 			<td>{ultimaActualizacion}</td>
 			<td>{fecha}</td>
 			<td>
-				<button
-					className="btn btn-eliminar"
-					onClick={() => eliminarCotizacion(id)}
-				>
+				<button className="btn" onClick={() => eliminarCotizacion(id)}>
 					Eliminar
 				</button>
 			</td>

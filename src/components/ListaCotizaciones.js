@@ -33,7 +33,7 @@ const ListaCotizaciones = () => {
 				<h1>
 					<span>Listado</span> de Cotizaciones
 				</h1>
-				<button className="btn">Cotizar</button>
+				<button className="btn">Regresar</button>
 			</Link>
 			<table className="table">
 				<thead className="table-head">
