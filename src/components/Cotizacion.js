@@ -5,6 +5,7 @@ const Cotizacion = ({ cotizacion, cripto, divisa }) => {
 	if (Object.keys(cotizacion).length === 0) return null;
 
 	// Funcion para envia la cotización a la api
+
 	const enviarCotizacion = async () => {
 		const cotizacionenviar = {
 			divisa,
