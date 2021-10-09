@@ -9,6 +9,9 @@ const Cotizacion = ({ cotizacion }) => {
 				El precio es: <span>{cotizacion.PRICE}</span>
 			</p>
 			<p>
+				Precio de apertura: <span>{cotizacion.OPENDAY}</span>
+			</p>
+			<p>
 				Precio más alto del día: <span>{cotizacion.HIGHDAY}</span>
 			</p>
 			<p>

@@ -1,0 +1,12 @@
+{
+    "cotizaciones": [
+        {
+            "precio": "",
+            "precioApertura": "",
+            "precioAltoDia": "",
+            "precioBajoDia": "",
+            "variacion": "",
+            "ultimaActualizacion": ""
+        }
+    ]
+}
