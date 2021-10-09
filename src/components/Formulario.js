@@ -4,7 +4,7 @@ import Error from './Error';
 
 // rsc→	stateless component skeleton
 
-const Formulario = () => {
+const Formulario = ({ setCripto, setDivisa }) => {
 	// State con la información seleccionada
 	const [selecciondivisa, setSeleccionDivisa] = useState('');
 	const [seleccioncripto, setSeleccionCripto] = useState('');
@@ -53,6 +53,8 @@ const Formulario = () => {
 
 		// Pasar los datos al componente principal
 		setError(false);
+		setDivisa(selecciondivisa);
+		setCripto(seleccioncripto);
 	};
 
 	return (
