@@ -1,9 +1,16 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import axios from 'axios';
+
+// rsc→	stateless component skeleton
 
 const Formulario = () => {
 	// State con la información seleccionada
 	const [selecciondivisa, setSeleccionDivisa] = useState('');
 	const [seleccioncripto, setSeleccionCripto] = useState('');
+
+	// State con la lista de criptos desde la api
+	const [listacripto, setlistaCripto] = useState([]);
+	const [error, setError] = useState(false);
 
 	const DIVISAS = [
 		{
@@ -20,8 +27,37 @@ const Formulario = () => {
 		},
 	];
 
+	// Traer información desde  la api
+	useEffect(() => {
+		const consultarAPI = async () => {
+			const respuesta = await axios({
+				method: 'get',
+				url: 'https://min-api.cryptocompare.com/data/top/mktcapfull?limit=10&tsym=USD',
+			});
+			setlistaCripto(respuesta.data.Data);
+		};
+
+		consultarAPI();
+	}, []);
+
+	// Funcion de submit
+	const cotizarDivisa = (e) => {
+		e.preventDefault();
+
+		// Validar si  los  campos estan vacios
+		if (selecciondivisa === '' || seleccioncripto === '') {
+			setError(true);
+			return;
+		}
+
+		// Pasar los datos al componente principal
+		setError(false);
+	};
+
 	return (
-		<form>
+		<form onSubmit={cotizarDivisa}>
+			{error ? <p className="alerta">Ambos campos son obligatorios</p> : null}
+
 			<label>Divisa</label>
 			<select onChange={(e) => setSeleccionDivisa(e.target.value)}>
 				<option value="">-- Seleccione su divisa --</option>
@@ -31,10 +67,17 @@ const Formulario = () => {
 					</option>
 				))}
 			</select>
+
 			<label>Criptomoneda</label>
-			<select>
+			<select onChange={(e) => setSeleccionCripto(e.target.value)}>
 				<option value="">-- Selecione la criptomoneda --</option>
+				{listacripto.map((opcion) => (
+					<option key={opcion.CoinInfo.Id} value={opcion.CoinInfo.Name}>
+						{opcion.CoinInfo.FullName}
+					</option>
+				))}
 			</select>
+
 			<button type="submit">Calcular</button>
 		</form>
 	);
