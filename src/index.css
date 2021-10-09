@@ -10,6 +10,7 @@
 	--azul-gris-claro: hsl(223, 64%, 98%);
 	--blanco: hsl(0, 0%, 100%);
 	--negro: hsl(0, 0%, 0%);
+	--rojo-alerta: rgb(185, 0, 0);
 
 	/* Tipografía */
 	--font-size: 1.6rem;
@@ -31,40 +32,164 @@ html {
 
 body {
 	font-size: var(--font-size);
+
+	background: var(--blanco);
 }
 
 /* ===== App ===== */
 .contenedor {
-	/* outline: 1px solid red; */
-	display: grid;
-	grid-template-columns: repeat(2, 1fr);
-	/* grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr)); */
-	/* grid-gap: 1rem; */
-	/* grid-auto-rows: 27rem; */
-	column-gap: 2rem;
-	max-width: 90rem;
-	margin: 5rem auto;
+	width: auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin: 12rem 5%;
+}
+
+.card-left {
+	padding: 3rem;
+	max-width: 50rem;
+}
+
+.card-right {
+	max-width: 50rem;
+	padding: 3rem;
+	border-radius: 0.8rem;
+	box-shadow: 0 0.3rem 0.6rem var(--naranja-suave),
+		0 0.3rem 0.6rem var(--naranja-suave);
 }
 
 .imagen {
-	width: 50rem;
-	/* height: 10rem; */
+	width: 100%;
 }
+
+/* ===== Titulo ===== */
 
 h1 {
 	text-align: left;
 	font-weight: 700;
 	font-size: 5rem;
-	margin-bottom: 5rem;
-	margin-top: 8rem;
+	margin-bottom: 3rem;
 	color: var(--azul-muy-oscuro);
 }
 
 h1::after {
 	content: '';
 	display: block;
-	width: 90%;
+	width: 75%;
 	height: 0.6rem;
 	margin-top: 1rem;
 	background-color: var(--azul-muy-oscuro);
+}
+
+h1 span {
+	color: var(--naranja);
+}
+
+/* ===== Formulario ===== */
+form {
+	display: flex;
+	flex-direction: column;
+	margin: 2rem 0;
+}
+
+label {
+	text-transform: uppercase;
+	font-weight: 700;
+	color: var(--azul-muy-oscuro);
+	margin-bottom: 0.2rem;
+}
+
+select {
+	font-weight: 700;
+	font-size: 1.6rem;
+	margin-bottom: 1.2rem;
+	padding: 1rem;
+	border: 0.2rem solid var(--azul-muy-oscuro);
+	border-radius: 0.5rem;
+	background: var(--blanco);
+	color: var(--naranja);
+}
+
+select:focus {
+	outline: none;
+	border: 0.2rem solid var(--naranja);
+	color: var(--azul-muy-oscuro);
+}
+
+button {
+	cursor: pointer;
+	font-size: 1.6rem;
+	font-weight: 700;
+	margin-top: 2rem;
+	padding: 1rem;
+	border: 0.2rem solid transparent;
+	border-radius: 0.5rem;
+	background: var(--naranja);
+	color: var(--blanco);
+	transition: all 0.3s ease;
+}
+
+button:hover {
+	border: 0.2rem solid var(--naranja);
+	color: var(--naranja);
+	background: var(--blanco);
+}
+
+/* ===== Cotización ===== */
+.cotizacion {
+	line-height: 3.5rem;
+}
+
+.cotizacion::before {
+	content: '';
+	display: block;
+	width: 75%;
+	height: 0.2rem;
+	margin-bottom: 2rem;
+	background-color: var(--naranja);
+}
+
+.cotizacion::after {
+	content: '';
+	display: block;
+	width: 55%;
+	height: 0.2rem;
+	margin-top: 2rem;
+	background-color: var(--naranja);
+}
+
+.cotizacion p {
+	color: var(--azul-gris);
+}
+
+.cotizacion span {
+	font-weight: 700;
+	font-size: 1.6rem;
+	padding: 0.3rem 0.5rem;
+	border-radius: 0.5rem;
+	color: var(--naranja);
+	background: var(--naranja-suave);
+}
+
+.precio {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-bottom: 1.5rem;
+}
+
+.precio span {
+	font-size: 2.2rem;
+}
+
+/* === Error === */
+.error {
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 1.6rem;
+	font-weight: 700;
+	padding: 1rem;
+	margin-bottom: 2rem;
+	border-radius: 0.5rem;
+	background: var(--rojo-alerta);
+	color: var(--blanco);
 }

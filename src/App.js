@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Formulario from './components/Formulario';
-import bitcoin from './assets/undraw_bitcoin2_ave7.svg';
+import bitcoin from './assets/undraw_crypto_portfolio_2jy5.svg';
 import axios from 'axios';
 import Cotizacion from './components/Cotizacion';
 
@@ -23,18 +23,20 @@ function App() {
 			});
 
 			setCotizacion(respuesta.data.DISPLAY[cripto][divisa]);
-			console.log(respuesta.data.DISPLAY[cripto][divisa]);
+			// console.log(respuesta.data.DISPLAY[cripto][divisa]);
 		};
 		cotizarCripto();
 	}, [divisa, cripto]);
 
 	return (
 		<div className="contenedor">
-			<div>
+			<div className="card-left">
 				<img className="imagen" src={bitcoin} alt="Bitcoin" />
 			</div>
-			<div>
-				<h1>Cotizador de Criptomonedas</h1>
+			<div className="card-right">
+				<h1>
+					<span>Cotizador</span> de Criptomonedas
+				</h1>
 				<Formulario setDivisa={setDivisa} setCripto={setCripto} />
 				<Cotizacion cotizacion={cotizacion} />
 			</div>

@@ -11,6 +11,8 @@ const Formulario = ({ setCripto, setDivisa }) => {
 
 	// State con la lista de criptos desde la api
 	const [listacripto, setlistaCripto] = useState([]);
+
+	// State con el error
 	const [error, setError] = useState(false);
 
 	const DIVISAS = [
@@ -51,7 +53,7 @@ const Formulario = ({ setCripto, setDivisa }) => {
 			return;
 		}
 
-		// Pasar los datos al componente principal
+		// Pasar los datos al componente principal App
 		setError(false);
 		setDivisa(selecciondivisa);
 		setCripto(seleccioncripto);

@@ -4,8 +4,8 @@ const Cotizacion = ({ cotizacion }) => {
 	if (Object.keys(cotizacion).length === 0) return null;
 
 	return (
-		<div>
-			<p>
+		<div className="cotizacion">
+			<p className="precio">
 				El precio es: <span>{cotizacion.PRICE}</span>
 			</p>
 			<p>
