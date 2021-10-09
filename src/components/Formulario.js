@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import Error from './Error';
 
 // rsc→	stateless component skeleton
 
@@ -56,7 +57,7 @@ const Formulario = () => {
 
 	return (
 		<form onSubmit={cotizarDivisa}>
-			{error ? <p className="alerta">Ambos campos son obligatorios</p> : null}
+			{error ? <Error msg="Ambos campos son obligatorios" /> : null}
 
 			<label>Divisa</label>
 			<select onChange={(e) => setSeleccionDivisa(e.target.value)}>
