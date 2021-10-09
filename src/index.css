@@ -1,28 +1,70 @@
+:root {
+	/* Primarios */
+	--naranja: hsl(26, 100%, 55%);
+	--naranja-suave: hsl(25, 100%, 94%);
+
+	/* Neutros */
+	--azul-muy-oscuro: hsl(220, 13%, 13%);
+	--azul-gris-oscuro: hsl(219, 9%, 45%);
+	--azul-gris: hsl(220, 14%, 75%);
+	--azul-gris-claro: hsl(223, 64%, 98%);
+	--blanco: hsl(0, 0%, 100%);
+	--negro: hsl(0, 0%, 0%);
+
+	/* Tipografía */
+	--font-size: 1.6rem;
+	--font-family: 'Kumbh Sans', sans-serif;
+}
+
+/* ===== Estilos globales ===== */
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 62.5%;
+	font-family: var(--font-family);
+}
+
 body {
-	background-color: #0d2235;
+	font-size: var(--font-size);
 }
-.error {
-	background-color: #b7322c;
-	padding: 1rem;
-	color: white;
-	font-size: 18px;
-	text-transform: uppercase;
-	font-weight: bold;
-	text-align: center;
+
+/* ===== App ===== */
+.contenedor {
+	/* outline: 1px solid red; */
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	/* grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr)); */
+	/* grid-gap: 1rem; */
+	/* grid-auto-rows: 27rem; */
+	column-gap: 2rem;
+	max-width: 90rem;
+	margin: 5rem auto;
 }
-.resultado {
-	color: white;
+
+.imagen {
+	width: 50rem;
+	/* height: 10rem; */
 }
-.resultado h2 {
-	font-weight: bold;
-	color: white;
+
+h1 {
+	text-align: left;
+	font-weight: 700;
+	font-size: 5rem;
+	margin-bottom: 5rem;
+	margin-top: 8rem;
+	color: var(--azul-muy-oscuro);
 }
-.resultado p {
-	font-size: 18px !important;
-}
-.resultado p span {
-	font-weight: bold;
-}
-p.precio {
-	font-size: 30px !important;
+
+h1::after {
+	content: '';
+	display: block;
+	width: 90%;
+	height: 0.6rem;
+	margin-top: 1rem;
+	background-color: var(--azul-muy-oscuro);
 }
