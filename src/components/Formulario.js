@@ -83,7 +83,9 @@ const Formulario = ({ setCripto, setDivisa }) => {
 				))}
 			</select>
 
-			<button type="submit">Calcular</button>
+			<button className="btn" type="submit">
+				Calcular
+			</button>
 		</form>
 	);
 };

@@ -1,12 +1,130 @@
 {
-    "cotizaciones": [
-        {
-            "precio": "",
-            "precioApertura": "",
-            "precioAltoDia": "",
-            "precioBajoDia": "",
-            "variacion": "",
-            "ultimaActualizacion": ""
-        }
-    ]
+  "cotizaciones": [
+    {
+      "id": 1,
+      "precio": "",
+      "precioApertura": "",
+      "precioAltoDia": "",
+      "precioBajoDia": "",
+      "variacion": "",
+      "ultimaActualizacion": ""
+    },
+    {
+      "precio": "COP 189,774,345.5",
+      "precioApertura": "COP 190,282,722.6",
+      "precioAltoDia": "COP 201,289,532.9",
+      "precioBajoDia": "COP 188,220,228.5",
+      "variacion": "-0.74",
+      "ultimaActualizacion": "3 min ago",
+      "id": 2
+    },
+    {
+      "precio": "$ 54,751.7",
+      "precioApertura": "$ 53,949.2",
+      "precioAltoDia": "$ 55,485.2",
+      "precioBajoDia": "$ 53,696.3",
+      "variacion": "0.82",
+      "ultimaActualizacion": "Just now",
+      "id": 3
+    },
+    {
+      "precio": "€ 47,165.7",
+      "precioApertura": "€ 46,495.4",
+      "precioAltoDia": "€ 47,767.7",
+      "precioBajoDia": "€ 46,286.1",
+      "variacion": "0.80",
+      "ultimaActualizacion": "Just now",
+      "id": 4
+    },
+    {
+      "precio": "COP 189,773,633.2",
+      "precioApertura": "COP 190,282,722.6",
+      "precioAltoDia": "COP 201,289,532.9",
+      "precioBajoDia": "COP 188,220,228.5",
+      "variacion": "-0.74",
+      "ultimaActualizacion": "2 min ago",
+      "id": 5
+    },
+    {
+      "divisa": "COP",
+      "cripto": "BTC",
+      "precio": "COP 189,773,633.2",
+      "precioApertura": "COP 190,282,722.6",
+      "precioAltoDia": "COP 201,289,532.9",
+      "precioBajoDia": "COP 188,220,228.5",
+      "variacion": "-0.74",
+      "ultimaActualizacion": "6 min ago",
+      "id": 6
+    },
+    {
+      "divisa": "USD",
+      "cripto": "BTC",
+      "precio": "$ 54,910.1",
+      "precioApertura": "$ 53,949.2",
+      "precioAltoDia": "$ 55,485.2",
+      "precioBajoDia": "$ 53,696.3",
+      "variacion": "1.10",
+      "ultimaActualizacion": "Just now",
+      "id": 7
+    },
+    {
+      "divisa": "USD",
+      "cripto": "BTC",
+      "precio": "$ 54,910.1",
+      "precioApertura": "$ 53,949.2",
+      "precioAltoDia": "$ 55,485.2",
+      "precioBajoDia": "$ 53,696.3",
+      "variacion": "1.10",
+      "ultimaActualizacion": "Just now",
+      "id": 8
+    },
+    {
+      "divisa": "USD",
+      "cripto": "BTC",
+      "precio": "$ 54,910.1",
+      "precioApertura": "$ 53,949.2",
+      "precioAltoDia": "$ 55,485.2",
+      "precioBajoDia": "$ 53,696.3",
+      "variacion": "1.10",
+      "ultimaActualizacion": "Just now",
+      "fecha": 1633799270297,
+      "id": 9
+    },
+    {
+      "divisa": "USD",
+      "cripto": "BTC",
+      "precio": "$ 54,910.1",
+      "precioApertura": "$ 53,949.2",
+      "precioAltoDia": "$ 55,485.2",
+      "precioBajoDia": "$ 53,696.3",
+      "variacion": "1.10",
+      "ultimaActualizacion": "Just now",
+      "fecha": 1633799272285,
+      "id": 10
+    },
+    {
+      "divisa": "USD",
+      "cripto": "BTC",
+      "precio": "$ 54,910.1",
+      "precioApertura": "$ 53,949.2",
+      "precioAltoDia": "$ 55,485.2",
+      "precioBajoDia": "$ 53,696.3",
+      "variacion": "1.10",
+      "ultimaActualizacion": "Just now",
+      "fecha": "Sat Oct 09 2021 12:11:45 GMT-0500 (hora estándar de Colombia)",
+      "id": 11
+    },
+    {
+      "divisa": "USD",
+      "cripto": "BTC",
+      "precio": "$ 54,910.1",
+      "precioApertura": "$ 53,949.2",
+      "precioAltoDia": "$ 55,485.2",
+      "precioBajoDia": "$ 53,696.3",
+      "variacion": "1.10",
+      "ultimaActualizacion": "Just now",
+      "fecha": "Sat Oct 09 2021 12:12:12 GMT-0500 (hora estándar de Colombia)",
+      "id": 12
+    }
+  ]
 }

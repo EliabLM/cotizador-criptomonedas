@@ -5,6 +5,7 @@ import bitcoin from '../assets/undraw_crypto_portfolio_2jy5.svg';
 import Cotizacion from './Cotizacion';
 
 import axios from 'axios';
+import { Link } from 'react-router-dom';
 
 const Principal = () => {
 	const [divisa, setDivisa] = useState('');
@@ -40,7 +41,10 @@ const Principal = () => {
 					<span>Cotizador</span> de Criptomonedas
 				</h1>
 				<Formulario setDivisa={setDivisa} setCripto={setCripto} />
-				<Cotizacion cotizacion={cotizacion} />
+				<Cotizacion cotizacion={cotizacion} cripto={cripto} divisa={divisa} />
+				<Link className="btn" to={'/lista'}>
+					Lista de Cotizaciones
+				</Link>
 			</div>
 		</div>
 	);
