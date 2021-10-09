@@ -198,6 +198,21 @@ select:focus {
 	margin: 10rem 5%;
 }
 
+.table {
+	width: 100%;
+	padding: 0 2%;
+}
+
+.table-head {
+	background: var(--azul-gris-claro);
+	/* border: 0.2rem solid var(--azul-muy-oscuro); */
+}
+
+.table-head th {
+	padding: 0.5rem;
+	color: var(--naranja);
+}
+
 /* === Error === */
 .error {
 	text-align: center;
