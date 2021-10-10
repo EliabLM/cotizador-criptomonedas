@@ -50,11 +50,13 @@ a {
 }
 
 .card-left {
+	width: 100%;
 	padding: 3rem;
 	max-width: 50rem;
 }
 
 .card-right {
+	width: 100%;
 	max-width: 50rem;
 	padding: 3rem;
 	border-radius: 0.8rem;
@@ -71,7 +73,7 @@ a {
 h1 {
 	text-align: left;
 	font-weight: 700;
-	font-size: 5rem;
+	font-size: calc(2.5rem + 1.5vw);
 	margin-bottom: 3rem;
 	color: var(--azul-muy-oscuro);
 }
