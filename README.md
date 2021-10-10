@@ -20,16 +20,16 @@ Esta aplicación permite cotizar el precio de las 10 criptomonedas más populare
 Los usuarios pueden:
 
 - Escoger la divisa entre USD, EURO Y COP.
-- Escoger la criptomoneda entre el listado de las 10 más populares (este listado es dinamico y depende de la respuesta de la api).
+- Escoger la criptomoneda entre el listado de las 10 más populares (este listado es dinámico y depende de la respuesta de la api).
 - Pedir la cotización correspondiente y verificar los resultados.
 - Guardar la cotización.
 - Ingresar al listado de cotizaciones realizadas.
-- Borrar cotizaciones o regresar a la pagina principal y realizar nuevas.
+- Borrar cotizaciones o regresar a la página principal y realizar nuevas.
 
 ### Links
 
 - GitHub repo: [GitHub repo](https://github.com/EliabLM/cotizador-criptomonedas)
-- Live Site URL: [Cotizador de criptos](https://your-live-site-url.com)
+- Live Site URL: [Cotizador de criptos](https://cotizador-criptomonedas-bf178.web.app)
 
 ## Proceso
 
