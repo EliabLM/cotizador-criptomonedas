@@ -1,70 +1,47 @@
-# Getting Started with Create React App
+# Cotizador de Criptomonedas App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Esta aplicación permite cotizar el precio de las 10 criptomonedas más populares de la api [CryptoCompare](https://min-api.cryptocompare.com/) y listar las cotizaciones para poder leerlas o eliminarlas utilzando Firebase.
 
-## Available Scripts
+## Tabla de Contenidos
 
-In the project directory, you can run:
+- [Vista general](#vista-general)
+  - [La aplicación](#la-aplicación)
+  - [Links](#links)
+- [Proceso](#proceso)
+  - [Construido con](#construido-con)
+- [Autor](#author)
 
-### `npm start`
+**Note: Delete this note and update the table of contents based on what sections you keep.**
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Vista General
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### La aplicación
 
-### `npm test`
+Los usuarios pueden:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Escoger la divisa entre USD, EURO Y COP.
+- Escoger la criptomoneda entre el listado de las 10 más populares (este listado es dinamico y depende de la respuesta de la api).
+- Pedir la cotización correspondiente y verificar los resultados.
+- Guardar la cotización.
+- Ingresar al listado de cotizaciones realizadas.
+- Borrar cotizaciones o regresar a la pagina principal y realizar nuevas.
 
-### `npm run build`
+### Links
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- GitHub repo: [GitHub repo](https://github.com/EliabLM/cotizador-criptomonedas)
+- Live Site URL: [Cotizador de criptos](https://your-live-site-url.com)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Proceso
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Construido con
 
-### `npm run eject`
+- Semantic HTML5 markup
+- CSS custom properties
+- Flexbox
+- [React](https://reactjs.org/) - JS library
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Author
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Website - [EliabLM](https://github.com/EliabLM)
+- Linkedin - [Eliab López](https://www.linkedin.com/in/eliablopez/)
+- Twitter - [@EliabLM](https://twitter.com/EliabLM)
