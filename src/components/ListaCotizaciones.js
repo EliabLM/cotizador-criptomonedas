@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import axios from 'axios';
+import { collection, getDocs } from 'firebase/firestore';
+import db from '../firebase/firebaseConfig';
+
 import { Link } from 'react-router-dom';
 
 import Error from './Error';
@@ -10,14 +12,20 @@ const ListaCotizaciones = () => {
 	const [cotizaciones, setCotizaciones] = useState([]);
 
 	useEffect(() => {
+		// Obtener cotizaciones de firebase
 		const obtenerCotizaciones = async () => {
 			try {
-				const respuesta = await axios({
-					method: 'get',
-					url: 'http://localhost:4000/cotizaciones',
+				const respuesta = await getDocs(collection(db, 'cotizaciones'));
+
+				const arrayCotizaciones = [];
+
+				respuesta.forEach((doc) => {
+					const cotizacion = doc.data();
+					cotizacion.id = doc.id;
+					arrayCotizaciones.push(cotizacion);
 				});
 
-				setCotizaciones(respuesta.data);
+				setCotizaciones(arrayCotizaciones);
 				setError(false);
 			} catch (error) {
 				console.error(error);

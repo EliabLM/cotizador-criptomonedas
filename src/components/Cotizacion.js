@@ -1,5 +1,6 @@
-import axios from 'axios';
 import React, { Fragment } from 'react';
+import { collection, addDoc } from 'firebase/firestore';
+import db from '../firebase/firebaseConfig';
 
 const Cotizacion = ({ cotizacion, cripto, divisa }) => {
 	if (Object.keys(cotizacion).length === 0) return null;
@@ -20,11 +21,7 @@ const Cotizacion = ({ cotizacion, cripto, divisa }) => {
 		};
 
 		try {
-			await axios({
-				method: 'post',
-				url: 'http://localhost:4000/cotizaciones',
-				data: cotizacionenviar,
-			});
+			await addDoc(collection(db, 'cotizaciones'), cotizacionenviar);
 			alert('Cotización guardada');
 		} catch (error) {
 			console.error(error);

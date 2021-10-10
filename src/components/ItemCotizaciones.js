@@ -1,5 +1,6 @@
-import axios from 'axios';
 import React from 'react';
+import { doc, deleteDoc } from 'firebase/firestore';
+import db from '../firebase/firebaseConfig';
 
 const ItemCotizaciones = ({ item, cotizaciones, setCotizaciones }) => {
 	const {
@@ -18,10 +19,8 @@ const ItemCotizaciones = ({ item, cotizaciones, setCotizaciones }) => {
 	// Eliminar cotizacion de la api
 	const eliminarCotizacionApi = async (id) => {
 		try {
-			await axios({
-				method: 'delete',
-				url: `http://localhost:4000/cotizaciones/${id}`,
-			});
+			await deleteDoc(doc(db, 'cotizaciones', `${id}`));
+			console.log(id);
 		} catch (error) {
 			console.error(error);
 		}
